@@ -7,7 +7,7 @@
 7.JSP
 8.CSS
 
-#Tools
+Tools Info
 1.Sublime Text
 2.Visual studio code editor
 3.Eclipse
