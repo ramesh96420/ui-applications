@@ -6,3 +6,8 @@
 6.Angular
 7.JSP
 8.CSS
+
+#Tools
+1.Sublime Text
+2.Visual studio code editor
+3.Eclipse
