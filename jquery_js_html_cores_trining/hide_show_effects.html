@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <link rel="stylesheet" type="text/css", href="index.css">
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+                integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+                crossorigin="anonymous"></script>
+            <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />            
+            <link rel="stylesheet" type="text/css" href="index.css">
+
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    </head>
+    <body>
+        <div class="dogimages">
+            <img src="dog_images/d1.jpeg"/>
+        </div>
+        <button class="button" id="hide">Hide</button>
+        <button class="button" id="show">Show</button>
+        <!-- jQuery script -->
+        <script>
+            $(document).ready(function(){
+                // create click() event
+                $("#hide").click(function(){ //when click on hide button,hide() method execute and hiding the select image.
+                    $("img").hide();              //hide() method to hide the image.
+                });
+
+                $("#show").click(function(){//when click on hide button,show() method execute and showing the select image.
+                    $("img").show();            //show() method to show the image.
+                });
+            });
+        </script>
+    </body>
+</html>

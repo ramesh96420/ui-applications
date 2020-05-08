@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <link rel="stylesheet" type="text/css", href="index.css">
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+                integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+                crossorigin="anonymous"></script>
+            <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />            
+            <link rel="stylesheet" type="text/css" href="index.css">
+
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    </head>
+    <body>
+      
+    <button id="side1">Slide</button>
+    <button id="side2">Slide</button>
+    <div id="dev1" style="width: 90px; height: 60px; background-color: pink;"></div>
+    <div id="dev2" style="width: 90px; height: 60px; display: none; background-color: yellow;"></div>
+    <!-- jQuery script -->
+    <script>
+        $(document).ready(function(){
+            $("#side1").on("click", function(){
+                $("#dev1").slideUp("slow");
+            });
+            $("#side2").on("click", function(){
+                $("#dev2").slideDown("slow");
+            });
+        });
+    </script>
+
+    </body>
+</html>

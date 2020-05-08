@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <link rel="stylesheet" type="text/css", href="index.css">
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+                integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+                crossorigin="anonymous"></script>
+            <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />            
+            <link rel="stylesheet" type="text/css" href="index.css">
+
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    </head>
+    <body>
+        <h1>jquery Tutorial</h1>
+        <style>
+            /* . is called a class
+               # is called a identifier
+             */
+            #drag {     
+                width: 150px;
+                height: 60px;
+                background-color: blueviolet;
+            }
+        </style>
+        <script>
+            /* $(function(){}) is short cut function of $(document).ready(function(){}) this.
+                both are same.
+            */
+            $(function(){
+                $("#drag").draggable();
+            });
+        </script>
+    <div id="drag">
+        <p>Drag me around</p>
+
+    </div>
+    </body>
+</html>

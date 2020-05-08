@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <link rel="stylesheet" type="text/css", href="index.css">
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+                integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+                crossorigin="anonymous"></script>
+            <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />            
+            <link rel="stylesheet" type="text/css" href="index.css">
+
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
+    </head>
+    <body>
+        <button>BYEEE</button>
+    <div class="dogimages">
+            <img id="one" src="dog_images/d1.jpeg"/>
+            <img id="two" src="dog_images/d2.jpeg"/>
+            <img id="three" src="dog_images/d1.jpeg"/>
+    </div>
+    <!-- jQuery function -->
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#one").fadeOut("slow");
+                $("#two").fadeOut("fast");
+                $("#three").fadeOut("slow");
+
+            });
+        });
+    </script>
+    </body>
+</html>
