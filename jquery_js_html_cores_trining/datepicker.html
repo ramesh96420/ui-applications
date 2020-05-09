@@ -15,33 +15,18 @@
         <!-- below links for draggable in jQuery. -->
 	 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" ></script>		
-    </head>
+
+    <!-- date pickup link for jQuery. -->
+      <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"> 
+      
+</head>
     <body>
         <h1>jquery Tutorial</h1>
-        <img src="dog_images/d1.jpeg"/>
-        <style>
-            /* . is called a class
-               # is called a identifier
-             */
-            #drag {             /* #drag is identifier (id). */
-                width: 400px;
-                height: 400px;
-                float: right;
-                background-color: aquamarine;
-            }
-        </style>
-        <script>
-            /* $(function(){}) is short cut function of $(document).ready(function(){}) this.
-                both are same.
-            */
-            $(function(){
-                $("img").draggable();           //draggable function
-                $("#drag").droppable();         //droppable function         
-            });
-            
-        </script>
-    <div id="drag">
-        <p>My home</p>
-    </div>
+        <input type="text" id="date" size="10">
+    <script>
+        $(function(){
+            $("#date").datepicker();
+        });
+    </script>
     </body>
 </html>

@@ -18,16 +18,14 @@
     </head>
     <body>
         <h1>jquery Tutorial</h1>
-        <img src="dog_images/d1.jpeg"/>
         <style>
             /* . is called a class
                # is called a identifier
              */
-            #drag {             /* #drag is identifier (id). */
-                width: 400px;
-                height: 400px;
-                float: right;
-                background-color: aquamarine;
+            #drag {             /* #drag is identifier. */
+                width: 150px;
+                height: 60px;
+                background-color: blueviolet;
             }
         </style>
         <script>
@@ -35,13 +33,15 @@
                 both are same.
             */
             $(function(){
-                $("img").draggable();           //draggable function
-                $("#drag").droppable();         //droppable function         
+                $("#drag").draggable();
+                
             });
-            
+            /*$(document).ready(function(){
+                $("#drag").draggable();
+            });*/
         </script>
     <div id="drag">
-        <p>My home</p>
+        <p>Drag me around</p>
     </div>
     </body>
 </html>
